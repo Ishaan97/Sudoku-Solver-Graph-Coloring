@@ -90,7 +90,7 @@ class SudokuBoard :
     
     def __graphColorUtility(self, m, color, v, given) :
         
-        if v == self.sudokuGraph.graph.totalV  : 
+        if v == self.sudokuGraph.graph.totalV+1  : 
             return True
         for c in range(1, m+1) : 
             if self.__isSafe2Color(v, color, c, given) == True :
